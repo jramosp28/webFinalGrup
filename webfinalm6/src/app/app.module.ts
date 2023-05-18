@@ -19,6 +19,7 @@ import { ComponentComunicationService } from 'src/Services/comunication.service'
 import { AuthService } from 'src/Services/auth.service';
 
 const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'alumnos', component: AlumnosComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }

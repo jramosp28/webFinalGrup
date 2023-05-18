@@ -8,7 +8,8 @@ import { ProfesoresComponent } from './profesores/profesores.component';
 
 
 const routes: Routes = [
-  // otras rutas 
+  // otras rutas +
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'alumnos', component: AlumnosComponent },
   { path: 'login', component: LoginComponent },
