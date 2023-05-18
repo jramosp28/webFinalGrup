@@ -1,0 +1,22 @@
+<div class="profesores-container">
+    <div class="profesor" *ngFor="let profesor of listaProfesores">
+      <div class="imagen-profesor">
+        <img src="{{ profesor.imagen }}">
+      </div>
+      <div class="info-profesor">
+        <div>
+          <span class="label">Nombre:</span> {{ profesor.nombre }}
+        </div>
+        <div>
+          <span class="label">Asignatura:</span> {{ profesor.asignatura }}
+        </div>
+        <div>
+          <span class="label">Lenguaje Potencial:</span> {{ profesor.lenguaje }}
+        </div>
+        <div>
+          <span class="label">Edad:</span> {{ profesor.edad }}
+        </div>
+      </div>
+    </div>
+  </div>
+  

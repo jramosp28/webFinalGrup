@@ -1,0 +1,41 @@
+<h1>LISTADO DE ALUMNOS</h1>
+<div class="alumno-container">
+    <div class="alumno-info"> <img src="./images/iconoperfil.png">
+        <div class="alumno-nombre">ALUMNO NUMERO 1</div>
+    </div> <button class="botonmostrar" (click)="mostrarInformacionAlumno1()">Mostrar</button>
+    <div class="alumno-informacion" [@expandirAnimacion]="alumno1Mostrado">
+        <p>Email: alumno1@ejemplo.com</p>
+        <p>Teléfono: 123456789</p>
+        <p>Fecha de nacimiento: 1 de enero de 2000</p>
+    </div>
+</div>
+<div class="alumno-container">
+    <div class="alumno-info"> <img src="./images/iconoperfil.png">
+        <div class="alumno-nombre">ALUMNO NUMERO 2</div>
+    </div> <button class="botonmostrar" (click)="mostrarInformacionAlumno2()">Mostrar</button>
+    <div class="alumno-informacion" [@expandirAnimacion]="alumno2Mostrado">
+        <p>Email: alumno2@ejemplo.com</p>
+        <p>Teléfono: 987654321</p>
+        <p>Fecha de nacimiento: 1 de febrero de 2001</p>
+    </div>
+</div>
+<div class="alumno-container">
+    <div class="alumno-info"> <img src="./images/iconoperfil.png">
+        <div class="alumno-nombre">ALUMNO NUMERO 3</div>
+    </div> <button class="botonmostrar" (click)="mostrarInformacionAlumno3()">Mostrar</button>
+    <div class="alumno-informacion" [@expandirAnimacion]="alumno3Mostrado">
+        <p>Email: alumno3@ejemplo.com</p>
+        <p>Teléfono: 555555555</p>
+        <p>Fecha de nacimiento: 1 de marzo de 2002</p>
+    </div>
+</div>
+<div class="alumno-container">
+    <div class="alumno-info"> <img src="./images/iconoperfil.png">
+        <div class="alumno-nombre">ALUMNO NUMERO 4</div>
+    </div> <button class="botonmostrar" (click)="mostrarInformacionAlumno4()">Mostrar</button>
+    <div class="alumno-informacion" [@expandirAnimacion]="alumno4Mostrado">
+        <p>Email: alumno4@ejemplo.com</p>
+        <p>Teléfono: 222222222</p>
+        <p>Fecha de nacimiento: 1 de abril de 2003</p>
+    </div>
+</div>

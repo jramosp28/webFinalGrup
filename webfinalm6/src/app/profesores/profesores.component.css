@@ -1,0 +1,78 @@
+.profesores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .profesor {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .profesor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imagen-profesor {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagen-profesor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info-profesor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .info-profesor div {
+    margin-bottom: 1rem;
+  }
+  
+  .nombre-profesor {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1c1c1c;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .asignatura-profesor {
+    font-size: 1.5rem;
+    color: #555;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lenguaje-profesor {
+    font-size: 1.2rem;
+    color: #555;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edad-profesor {
+    font-size: 1.2rem;
+    color: #555;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  

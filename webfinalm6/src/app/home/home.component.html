@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="header">
+    <h1>Bienvenidos a 2 DAW</h1>
+    <p>¡Celebrando nuestra graduación!</p>
+  </div>
+  <div class="main">
+    <img id="gradubanner1" src="assets/images/gradubanner.jpg" alt="Foto de la clase">
+    <p>Estamos muy emocionados de graduarnos y queremos compartir este momento especial con todos ustedes. ¡Gracias por apoyarnos en nuestro viaje educativo!</p>
+    <button class="btn" (click)="toggleSummary()">Más información</button>
+    <div class="summary" [@fadeAnimation]="showSummary ? 'visible' : 'hidden'" *ngIf="showSummary">
+      <h2>Resumen del Ciclo de Informática</h2>
+      <p>Aquí puedes agregar un resumen extenso de las experiencias y logros obtenidos en el ciclo de informática. Incluye detalles como proyectos realizados, tecnologías aprendidas y los objetivos alcanzados.</p>
+      <p>También puedes agregar un mensaje de agradecimiento a los profesores, compañeros y otros colaboradores que hicieron posible el éxito del ciclo de informática.</p>
+    </div>
+  </div>
+  <div class="status" *ngIf="isLoggedIn">
+    <p>Has iniciado sesión correctamente.</p>
+    <button class="btn" (click)="logout()">Cerrar sesión</button>
+  </div>
+</div>
