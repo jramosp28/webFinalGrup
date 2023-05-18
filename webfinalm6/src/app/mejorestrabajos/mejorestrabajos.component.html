@@ -1,0 +1,35 @@
+<h2>Mejores Trabajos</h2>
+
+<button mat-raised-button color="primary" (click)="mostrarFormulario()">SUBIR TRABAJO</button>
+
+<table mat-table [dataSource]="trabajos" class="mat-elevation-z8">
+  <!-- Columnas de la tabla -->
+  <ng-container matColumnDef="nombre">
+    <th mat-header-cell *matHeaderCellDef>Nombre</th>
+    <td mat-cell *matCellDef="let trabajo">{{ trabajo.nombre }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="apellidos">
+    <th mat-header-cell *matHeaderCellDef>Apellidos</th>
+    <td mat-cell *matCellDef="let trabajo">{{ trabajo.apellidos }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="diaRealizado">
+    <th mat-header-cell *matHeaderCellDef>Día Realizado</th>
+    <td mat-cell *matCellDef="let trabajo">{{ trabajo.diaRealizado | date }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="asignatura">
+    <th mat-header-cell *matHeaderCellDef>Asignatura</th>
+    <td mat-cell *matCellDef="let trabajo">{{ trabajo.asignatura }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="link">
+    <th mat-header-cell *matHeaderCellDef>Link</th>
+    <td mat-cell *matCellDef="let trabajo"><a [href]="trabajo.link">{{ trabajo.link }}</a></td>
+  </ng-container>
+
+  <!-- Filas de la tabla -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let trabajo; columns: displayedColumns"></tr>
+</table>
